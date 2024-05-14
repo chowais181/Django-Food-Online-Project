@@ -67,7 +67,7 @@
                       </div>
                     </li>
                     <li>
-                      <div class="row">
+                      <!-- <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="field-holder">
                             <div class="payment-holder">
@@ -78,7 +78,35 @@
                                 class="bgcolor"
                               />
                             </div>
+                            <div class="payment-holder">
+                              <a
+                                href="{% url 'forgot_password' %}"
+                                class="float-right"
+                                >Forgot password</a
+                              >
+                            </div>
                           </div>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <div class="col">
+                          <div class="field-holder">
+                            <div class="payment-holder">
+                              <input
+                                type="submit"
+                                value="Submit"
+                                id="btn-next-restaurant-information"
+                                class="bgcolor m-0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <a
+                            href="{% url 'forgot_password' %}"
+                            class="float-right"
+                            >Forgot password</a
+                          >
                         </div>
                       </div>
 
