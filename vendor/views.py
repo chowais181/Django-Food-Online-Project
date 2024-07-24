@@ -40,6 +40,7 @@ def vprofile(request):
             messages.success(request, 'Settings updated.')
             return redirect('vprofile')
         else:
+            messages.error(request,"Error! Please fill in the data carefully.")
             print(profile_form.errors)
             print(vendor_form.errors)
     else:
